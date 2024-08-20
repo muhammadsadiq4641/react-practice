@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "./button";
 
-const Home = () => {
+const First = () => {
   const [count, setCount] = useState(0);
 
   return (
@@ -20,7 +21,7 @@ const Home = () => {
           </button>
           <button
             className="bg-gray-200 px-4 py-2"
-            onClick={() => setCount(count === 0)}
+            onClick={() => setCount(0)}
           >
             Refresh
           </button>
@@ -36,4 +37,33 @@ const Home = () => {
   );
 };
 
-export default Home;
+
+
+
+
+
+
+// export default First;
+
+
+
+// const second = () => {
+//   const [count, setCount] = useState (0);
+
+//   return (
+//     <>
+
+// <div>
+//   <h1>counter: {count}</h1>
+
+//   <button onClick={() => setCount(count + 1)}>increment</button>
+//   <button onClick={() => setCount (0)}>refresh</button>
+//   <button onClick={() => setCount(count - 1)}>decrement</button>
+
+// </div>
+
+//     </>
+//   )
+// }
+
+// export default second;
